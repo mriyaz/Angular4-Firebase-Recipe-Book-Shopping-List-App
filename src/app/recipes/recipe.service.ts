@@ -27,6 +27,10 @@ export class RecipeService{
     return this.recipes.slice();//Returns copy of the recipe array
   }
 
+  getRecipe(id:number){
+    return this.recipes[id];
+  }
+
   addIngredientsToShoppingList(ingredients:Ingredient[]){
    this.slService.addIngredients(ingredients);
 
