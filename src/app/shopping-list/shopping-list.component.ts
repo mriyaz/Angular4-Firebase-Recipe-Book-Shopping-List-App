@@ -30,4 +30,8 @@ private subscription:Subscription;
     this.subscription.unsubscribe();
   }
 
+  onEditItem(index:number){
+    this.slService.startedEditing.next(index);
+  }
+
 }
